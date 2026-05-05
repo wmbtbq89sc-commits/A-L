@@ -2,108 +2,201 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>A&L 💍</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A&L💗</title>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        overflow: hidden;
-    }
+body{
+    margin:0;
+    font-family:Arial;
+    background: radial-gradient(circle at top,#0f172a,#1e1b4b);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    overflow-y:auto;
+    padding:20px;
+}
 
-    .container {
-        max-width: 700px;
-        padding: 30px;
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
-        background: rgba(255,255,255,0.05);
-        box-shadow: 0 0 30px rgba(255, 0, 100, 0.3);
-        animation: fadeIn 2s ease;
-    }
+.box{
+    width:90%;
+    max-width:750px;
+    background:rgba(255,255,255,0.06);
+    border-radius:25px;
+    padding:25px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 40px rgba(255,105,180,0.2);
+    text-align:center;
+}
 
-    h1 {
-        color: #ff4d88;
-        margin-bottom: 20px;
-    }
+h1{ color:#ff7eb6; }
 
-    p {
-        line-height: 1.8;
-        font-size: 16px;
-        opacity: 0;
-        animation: reveal 2s forwards;
-    }
+button{
+    padding:12px 18px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    margin:5px;
+}
 
-    p:nth-child(2) { animation-delay: 1s; }
-    p:nth-child(3) { animation-delay: 2s; }
-    p:nth-child(4) { animation-delay: 3s; }
-    p:nth-child(5) { animation-delay: 4s; }
-    p:nth-child(6) { animation-delay: 5s; }
+.mainBtn{background:#ff7eb6;color:white;}
+.secBtn{background:transparent;border:1px solid #aaa;color:white;}
 
-    @keyframes fadeIn {
-        from {opacity:0; transform: translateY(20px);}
-        to {opacity:1; transform: translateY(0);}
-    }
+.section{
+    display:none;
+    text-align:left;
+    margin-top:20px;
+    line-height:2;
+    white-space:pre-line;
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:15px;
+}
 
-    @keyframes reveal {
-        to {opacity:1;}
-    }
+.lockBox{
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.2);
+}
 
-    .heart {
-        position: absolute;
-        color: #ff4d88;
-        font-size: 20px;
-        animation: float 6s linear infinite;
-    }
+input{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    text-align:center;
+    margin-top:10px;
+}
 
-    @keyframes float {
-        0% {transform: translateY(100vh) scale(1);}
-        100% {transform: translateY(-10vh) scale(1.5);}
-    }
+.lockMsg{
+    display:none;
+    margin-top:20px;
+    text-align:left;
+    line-height:2;
+    white-space:pre-line;
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:15px;
+}
 </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>A&L💗</h1>
+<div class="box">
+<h1>A & L 💍</h1>
 
-    <p>Leena…</p>
+<div>
+<button class="mainBtn" onclick="show(1)">Engagement</button>
+<button class="secBtn" onclick="show(2)">Decision</button>
+<button class="secBtn" onclick="show(3)">Final</button>
+</div>
 
-    <p>I don’t even know how to explain this properly, but I really miss you. Not just in a simple “I miss you” way… it’s deeper than that. It’s like there’s this quiet space in my day that only you can fill, and when you’re not there, everything just feels a little off.</p>
+<div id="msg1" class="section">
+okay let's talk…
 
-    <p>I miss the small things the most. The way you talk, the way you laugh, even the random things you say that don’t make sense but somehow still make me smile. It’s weird how someone can become such a big part of your thoughts without even trying… but that’s exactly what you did to me.</p>
+About the engagement… I know we both weren’t fully okay with how fast everything happened. It wasn’t like we sat down and 100% agreed on it with full confidence. We were kind of in between, unsure, and just going with what was happening around us. But at the end… what’s done is done.
 
-    <p>There are moments where I just stop and think about you for no reason. Like when I’m doing something normal, and suddenly you’re on my mind again, and I realize how much I wish you were there with me. Not even doing anything special, just being there is enough.</p>
+And now we’re here.
 
-    <p>I don’t think you understand how much your presence matters to me. It’s not about big things or dramatic moments… it’s the calm feeling I get when I talk to you, the comfort, the way everything feels lighter.</p>
+I’m not gonna pretend I planned this or that I was completely ready for it either. I wasn’t. And I don’t think you were too.
 
-    <p>I just… miss you, Leena. More than I expected, more than I can easily explain. And I hope you feel even a little bit of that too.</p>
+We’re still young, still figuring ourselves out, still changing without even noticing. At this age, people don’t stay the same for long — feelings, thoughts, everything keeps shifting as we grow and experience more things in life.
+
+I’m not trying to say I understand everything or that I’ve got it all figured out, because I don’t. I’m just being honest about where my head is right now.
+
+And maybe with time, we’ll both look back at this phase and understand it differently than we do now. Not because someone explained it to us, but because we grew through it ourselves.
+
+For now, I just want things between us to stay real. No confusion, no pretending — just honesty, even if everything isn’t perfect..
+</div>
+
+<div id="msg2" class="section">
+My dear queen…🫡
+
+I understand your decision to focus on your studies and take a step back from everything for now. If that’s what you need, I respect it.
+
+I just want you to know I’m not against your goals or your education at all. In fact, I want you to do well and feel focused without pressure from anything else.
+
+At the same time, I won’t lie and say I won’t miss talking to you. I will. But I’m not going to disturb your focus or make things harder for you.
+
+Just take your time and do what’s best for you right now. We can always figure things out later when things feel more balanced.
+
+and keep in your mind that you are my queen and Queen means I have to listen to you no matter what and keep you happy🤪
+</div>
+
+<div id="msg3" class="section">
+
+No matter what happens, you meant something real to me
+That doesn’t disappear
+
+do you understand babyyy?🔪
+
+I love you okay?👺
+
+and Im not ignoring or trying to ignore you... im just trying to give My baby the space she wanted😋
+
+</div>
+
+<div class="lockBox">
+<h3>🔒 Secret Message</h3>
+<p>Enter password to unlock</p>
+
+<input type="password" id="code" placeholder="DDMM">
+<br>
+<button class="mainBtn" onclick="check()">Unlock</button>
+
+<div id="secret" class="lockMsg">
+
+OMG My baby🥹 how did you know that i will put your BD date as a password?
+
+any ways..
+I don’t even know how to explain this properly, 
+
+but I really miss you Not just in a simple “I miss you” way… 
+it’s deeper than that It’s like there’s this quiet space in my day that only you can fill 
+
+I miss the small things the most. The way you talk, the way you laugh, 
+even the random things you say that don’t make sense but somehow still make me smile. 
+It’s weird how someone can become such a big part of your thoughts without even trying… 
+but that’s exactly what you did to me.
+
+There are moments where I just stop and think about you for no reason. 
+Like when I’m doing something normal, 
+and suddenly you’re on my mind again, and I realize how much I wish you were there with me. 
+Not even doing anything special, 
+just being there is enough.
+
+I don’t think you understand how much your presence matters to me. 
+It’s not about big things or dramatic moments… it’s the calm feeling I get when I talk to you, 
+the comfort, the way everything feels lighter.
+
+I just… miss you Leena More than I expected, more than I can easily explain. 
+And I hope you feel even a little bit of that too..
+
+And Remember the day I sent you a voice message and told you I felt like my heart was hurting? 
+I was just kidding with you hahahahaha ​​i was just doing like that so we can talk longer 😅
+
+</div>
+</div>
+
 </div>
 
 <script>
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.classList.add("heart");
-    heart.innerHTML = "💗";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-    document.body.appendChild(heart);
-
-    setTimeout(() => {
-        heart.remove();
-    }, 6000);
+function show(n){
+    document.querySelectorAll(".section").forEach(e=>{
+        e.style.display="none";
+    });
+    document.getElementById("msg"+n).style.display="block";
 }
 
-setInterval(createHeart, 300);
+function check(){
+    let val = document.getElementById("code").value;
+    if(val === "2911"){
+        document.getElementById("secret").style.display = "block";
+    } else {
+        alert("Wrong code");
+    }
+}
 </script>
 
 </body>
