@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A&L💗</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container {
+        max-width: 700px;
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        background: rgba(255,255,255,0.05);
+        box-shadow: 0 0 30px rgba(255, 0, 100, 0.3);
+        animation: fadeIn 2s ease;
+    }
+
+    h1 {
+        color: #ff4d88;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.8;
+        font-size: 16px;
+        opacity: 0;
+        animation: reveal 2s forwards;
+    }
+
+    p:nth-child(2) { animation-delay: 1s; }
+    p:nth-child(3) { animation-delay: 2s; }
+    p:nth-child(4) { animation-delay: 3s; }
+    p:nth-child(5) { animation-delay: 4s; }
+    p:nth-child(6) { animation-delay: 5s; }
+
+    @keyframes fadeIn {
+        from {opacity:0; transform: translateY(20px);}
+        to {opacity:1; transform: translateY(0);}
+    }
+
+    @keyframes reveal {
+        to {opacity:1;}
+    }
+
+    .heart {
+        position: absolute;
+        color: #ff4d88;
+        font-size: 20px;
+        animation: float 6s linear infinite;
+    }
+
+    @keyframes float {
+        0% {transform: translateY(100vh) scale(1);}
+        100% {transform: translateY(-10vh) scale(1.5);}
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>A&L💗</h1>
+
+    <p>Leena…</p>
+
+    <p>I don’t even know how to explain this properly, but I really miss you. Not just in a simple “I miss you” way… it’s deeper than that. It’s like there’s this quiet space in my day that only you can fill, and when you’re not there, everything just feels a little off.</p>
+
+    <p>I miss the small things the most. The way you talk, the way you laugh, even the random things you say that don’t make sense but somehow still make me smile. It’s weird how someone can become such a big part of your thoughts without even trying… but that’s exactly what you did to me.</p>
+
+    <p>There are moments where I just stop and think about you for no reason. Like when I’m doing something normal, and suddenly you’re on my mind again, and I realize how much I wish you were there with me. Not even doing anything special, just being there is enough.</p>
+
+    <p>I don’t think you understand how much your presence matters to me. It’s not about big things or dramatic moments… it’s the calm feeling I get when I talk to you, the comfort, the way everything feels lighter.</p>
+
+    <p>I just… miss you, Leena. More than I expected, more than I can easily explain. And I hope you feel even a little bit of that too.</p>
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}
+
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
